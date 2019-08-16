@@ -20,7 +20,6 @@ public class PiDigits {
      */
     public static byte[] getDigits(int start, int count) {
     	
-    	
         if (start < 0) {
             throw new RuntimeException("Invalid Interval");
         }

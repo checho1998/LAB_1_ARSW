@@ -6,6 +6,8 @@ public class BBPThread extends Thread {
 	
 	int x;
 	int y;
+	int n;
+	byte[]  calcular;
 
 	public BBPThread(int x, int y) {
 		super();
@@ -14,8 +16,16 @@ public class BBPThread extends Thread {
 	}
 
 	public void run() {
-			byte[] lec = PiDigits.getDigits(x, y);
-			System.out.println(lec);
-		}
+		
+			calcular = PiDigits.getDigits(x, y);
+			
+	}
+
+	public byte[] getCalcular() {
+		return calcular;
+	}
+
+	
+	
 
 }
