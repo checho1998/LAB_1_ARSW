@@ -18,30 +18,16 @@ import edu.eci.arsw.threads.BBPThread;
 public class Main {
 
     public static void main(String a[]) {
-    	ArrayList<String> calculos = new ArrayList<String>();
-    	ArrayList<BBPThread> hilos = new ArrayList<BBPThread>();
+    	/**
     	Scanner sca = new Scanner(System.in); 
     	int n = sca.nextInt();
-    	int temp = 1000000/n;
-    	int start = 1;
+    	BBPmain bbp = new BBPmain();
+    	BBPmain bbp2 = new BBPmain();
+    	bbp.calcularNumero(1);
+    	System.out.println("");
+    	bbp2.calcularNumero(100);*/
     	
-    	for (int i = 0;i<n;i++) {
-    		hilos.add(new BBPThread(start,temp));
-    		hilos.get(i).start();
-    		start += temp;
-    	}
-    	for (int j = 0;j<n;j++) {
-    		try {
-				hilos.get(j).join();
-				calculos.add(bytesToHex(hilos.get(j).getCalcular()));
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-    	}
-    	for (int k = 0;k<n;k++) {
-    		System.out.println(calculos.get(k));
-    	}
+    	
     	//BBPThread hilo1 = new BBPThread(0,10);
     	//BBPThread hilo2 = new BBPThread(11,100);
     	//BBPThread hilo3 = new BBPThread(101,1000000);

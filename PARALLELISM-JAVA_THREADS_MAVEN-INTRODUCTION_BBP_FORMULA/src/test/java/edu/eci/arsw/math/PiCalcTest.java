@@ -8,6 +8,7 @@ package edu.eci.arsw.math;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  *
@@ -48,5 +49,23 @@ public class PiCalcTest {
             }
         }
     }
-
+    
+    @Test
+    public void unHiloTest() {
+    	
+    	BBPmain bbp = new BBPmain();
+    	BBPmain bbp2 = new BBPmain();
+    	bbp.calcularNumero(1);
+    	bbp2.calcularNumero(100);
+    	assertEquals(bbp.getSolu(),bbp2.getSolu());
+    }
+    
+    @Test
+    public void dosHilosTest() {
+    	
+    }
+    @Test
+    public void tresHilosTest() {
+    	
+    }
 }
