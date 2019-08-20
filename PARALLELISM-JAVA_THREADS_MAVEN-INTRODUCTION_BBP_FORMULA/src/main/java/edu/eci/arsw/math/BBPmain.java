@@ -21,9 +21,9 @@ public class BBPmain {
 			faltantes = temp*n;
 			faltantes = cantidad - faltantes;
 		}
+		
 		int start = 0;
 		for (int i = 0;i<n;i++) {
-			
 			if(faltantes == 0) {
 				hilos.add(new BBPThread(start,temp));
 	    		hilos.get(i).start();
