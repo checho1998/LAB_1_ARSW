@@ -10,31 +10,31 @@ public class BBPmain {
 	private String solu = new String();
 	
 	public void calcularNumero(int n) {
+		this.n = n;
 		ArrayList<String> calculos = new ArrayList<String>();
 		ArrayList<BBPThread> hilos = new ArrayList<BBPThread>();
 		int temp = 0;
 		int faltantes = 0;
-		int cantidad = 10000;
-		if (cantidad % n == 0) {
-			temp = cantidad/n;
-		}
-		else {
-			temp = cantidad/n;
+		int cantidad = 1000;
+		temp = cantidad/n;
+		if (cantidad % n != 0) {
 			faltantes = temp*n;
 			faltantes = cantidad - faltantes;
 		}
-		int start = 1;
+		int start = 0;
 		for (int i = 0;i<n;i++) {
+			
 			if(faltantes == 0) {
 				hilos.add(new BBPThread(start,temp));
 	    		hilos.get(i).start();
+	    		start += temp;
 			}
 			else{
 				hilos.add(new BBPThread(start,temp+1));
 	    		hilos.get(i).start();
 	    		faltantes -= 1;
+	    		start += (temp+1);
 			}
-			start += temp;
 		}
 		for (int j = 0;j<n;j++) {
 			try {
@@ -48,7 +48,7 @@ public class BBPmain {
 		
 		for (int k = 0;k<n;k++) {
 			solu = solu+calculos.get(k);
-			System.out.print(calculos.get(k));
+			//System.out.println(calculos.get(k));
 		}
 	}
 	public String getSolu() {

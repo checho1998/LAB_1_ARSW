@@ -50,22 +50,30 @@ public class PiCalcTest {
         }
     }
     
-    @Test
+    /**@Test
     public void unHiloTest() {
     	
     	BBPmain bbp = new BBPmain();
     	BBPmain bbp2 = new BBPmain();
     	bbp.calcularNumero(1);
-    	bbp2.calcularNumero(100);
+    	bbp2.calcularNumero(1);
     	assertEquals(bbp.getSolu(),bbp2.getSolu());
     }
     
     @Test
     public void dosHilosTest() {
-    	
-    }
+    	BBPmain bbp = new BBPmain();
+    	BBPmain bbp2 = new BBPmain();
+    	bbp.calcularNumero(1);
+    	bbp2.calcularNumero(2);
+    	assertEquals(bbp.getSolu(),bbp2.getSolu());
+    }*/
     @Test
     public void tresHilosTest() {
-    	
+    	BBPmain bbp = new BBPmain();
+    	BBPmain bbp2 = new BBPmain();
+    	bbp.calcularNumero(1);
+    	bbp2.calcularNumero(3);
+    	assertEquals(bbp.getSolu(),bbp2.getSolu());
     }
 }

@@ -18,14 +18,11 @@ import edu.eci.arsw.threads.BBPThread;
 public class Main {
 
     public static void main(String a[]) {
-    	/**
-    	Scanner sca = new Scanner(System.in); 
-    	int n = sca.nextInt();
+    	
+    	//Scanner sca = new Scanner(System.in); 
+    	//int n = sca.nextInt();
     	BBPmain bbp = new BBPmain();
-    	BBPmain bbp2 = new BBPmain();
     	bbp.calcularNumero(1);
-    	System.out.println("");
-    	bbp2.calcularNumero(100);*/
     	
     	
     	//BBPThread hilo1 = new BBPThread(0,10);
