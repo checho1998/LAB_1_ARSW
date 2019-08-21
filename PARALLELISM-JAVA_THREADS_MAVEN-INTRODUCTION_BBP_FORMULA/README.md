@@ -17,11 +17,15 @@ en cambio si usamos el metodo run() se ejecutara el hilo en el orden definido si
 ## PARTE-3-Performance Evaluation:
 
 When starting the program, run the jVisualVM monitor, and as the tests run, check and record the CPU and memory consumption in each case.
-
+- Un Hilo
 ![Imagenes](https://github.com/checho1998/LAB_1_ARSW/blob/master/fotos/uno.PNG)
+- Cuatro Hilos
 ![Imagenes](https://github.com/checho1998/LAB_1_ARSW/blob/master/fotos/cuatroNucleos.PNG)
+- Ocho Hilos
 ![Imagenes](https://github.com/checho1998/LAB_1_ARSW/blob/master/fotos/ocho.PNG)
+- Docientos Hilos
 ![Imagenes](https://github.com/checho1998/LAB_1_ARSW/blob/master/fotos/docientos.PNG)
+- Uso de Cores en monitor de procesos
 ![Imagenes](https://github.com/checho1998/LAB_1_ARSW/blob/master/fotos/cores.PNG)
 
 Why is the best performance not achieved with the 500 threads? How does this performance compare when 200 are used?.
