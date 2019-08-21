@@ -50,7 +50,7 @@ public class PiCalcTest {
         }
     }
     
-    /**@Test
+    @Test
     public void unHiloTest() {
     	
     	BBPmain bbp = new BBPmain();
@@ -67,7 +67,7 @@ public class PiCalcTest {
     	bbp.calcularNumero(1);
     	bbp2.calcularNumero(2);
     	assertEquals(bbp.getSolu(),bbp2.getSolu());
-    }*/
+    }
     @Test
     public void tresHilosTest() {
     	BBPmain bbp = new BBPmain();

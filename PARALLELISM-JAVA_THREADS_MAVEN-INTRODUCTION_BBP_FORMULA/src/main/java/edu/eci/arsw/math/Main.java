@@ -22,7 +22,7 @@ public class Main {
     	//Scanner sca = new Scanner(System.in); 
     	//int n = sca.nextInt();
     	BBPmain bbp = new BBPmain();
-    	bbp.calcularNumero(1);
+    	bbp.calcularNumero(8);
     	
     	
     	//BBPThread hilo1 = new BBPThread(0,10);

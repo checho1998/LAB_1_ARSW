@@ -15,7 +15,7 @@ public class BBPmain {
 		ArrayList<BBPThread> hilos = new ArrayList<BBPThread>();
 		int temp = 0;
 		int faltantes = 0;
-		int cantidad = 1000;
+		int cantidad = 100000;
 		temp = cantidad/n;
 		if (cantidad % n != 0) {
 			faltantes = temp*n;
@@ -48,7 +48,7 @@ public class BBPmain {
 		
 		for (int k = 0;k<n;k++) {
 			solu = solu+calculos.get(k);
-			//System.out.println(calculos.get(k));
+			System.out.println(calculos.get(k));
 		}
 	}
 	public String getSolu() {
