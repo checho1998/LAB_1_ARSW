@@ -8,4 +8,4 @@ en cambio si usamos el metodo run() se ejecutara el hilo en el orden definido si
 
 ## PARTE-2:
 ### Join
-![Imagenes](https://github.com/checho1998/LAB_1_ARSW/fotos/uno.PNG)
+![Imagenes](https://github.com/checho1998/LAB_1_ARSW/blob/master/fotos/uno.PNG)
