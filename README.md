@@ -1,6 +1,6 @@
 # LABORATORIO_1_ARSW:
 
-##Compile and run instructions
+## Compile and run instructions
 
 - Para compilar: Ejecutar mvn package
 
